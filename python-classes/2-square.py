@@ -1,0 +1,16 @@
+#!/usr/bin/python3
+"""Squirtle"""
+
+
+class Square:
+    """Squirtle Squirtle"""
+
+    def __init__(self, size=0):
+        """Size"""
+        self.__size = size
+        if isinstance(size):
+            if size < 0:
+                raise ValueError("size must be >= 0")
+        else:
+            raise TypeError("size must be an integer")
+        pass
