@@ -6,7 +6,7 @@ class Square:
     """Squirtle Squirtle"""
 
     def __init__(self, size=0):
-        """Size"""
+        "Size"
         self.__size = size
 
     @property

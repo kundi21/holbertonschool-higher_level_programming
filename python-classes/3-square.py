@@ -7,7 +7,8 @@ class Square:
 
     def __init__(self, size=0):
         """Size"""
-        self.__size = size
+        self.set_size(size)
+        value = size
 
         if isinstance(size, int):
             if size < 0:
@@ -15,8 +16,10 @@ class Square:
         else:
             raise TypeError("size must be an integer")
 
+    def get_size(self):
+        return self.get_size
+
     def area(self):
         """Areaaaaaa"""
-        self.area = self.__size * self.__size
-        return self.area
+        return self.__size ** 2
     pass
